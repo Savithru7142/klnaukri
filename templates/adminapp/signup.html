@@ -1,0 +1,18 @@
+{% extends 'navbar/adminnavbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    SignUp Page
+</head>
+<body>
+{% block body %}
+<h2>Signup Form</h2>
+<form method="post" action="{% url 'signup' %}">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <button type="submit" class="btn btn-success">Register</button>
+</form>
+{% endblock %}
+
+</body>
+</html>

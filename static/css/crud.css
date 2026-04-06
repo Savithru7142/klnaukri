@@ -1,0 +1,177 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Cambria;
+    background: #f4f6f8;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Grid layout */
+.crud-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Column cards */
+.col {
+
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    height: 80vh;
+}
+
+.col h2 {
+    margin-bottom: 15px;
+}
+
+/* Create column highlight */
+.create {
+    background-color: #e7f1ff;
+}
+
+/* Input group */
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13,110,253,0.2);
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0d6efd;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #084298;
+}
+
+.result {
+    padding: 15px 18px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+}
+/* Each line */
+.result p {
+    margin: 8px 0;
+    padding: 15px;
+    font-size: 15px;
+    color: #212529;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Label */
+.result b {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+
+.update {
+    background-color: #fff7e6;
+}
+
+.update select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+}
+
+.update .btn {
+    margin-bottom: 10px;
+}
+
+/* Delete column */
+.delete {
+    background-color: #ffecec;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #b02a37;
+}
+
+.read{
+    background: #fff7e6;
+}
+
+.update{
+    background-color: #fff7e6;
+}
+.delete{
+    background-color: burlywood;
+}
+
+.result {
+    width: 320px;
+    margin: 25px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.result p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+.result p b {
+    color: #0d6efd;
+}
